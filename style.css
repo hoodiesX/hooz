@@ -1,0 +1,68 @@
+:root {
+  --bg: #fdfbf5;
+  --fg: #111111;
+  --accent: #000000;
+  --link: #0033aa;
+  --max-width: 680px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family: "Courier New", Courier, monospace;
+  background: var(--bg);
+  color: var(--fg);
+  display: flex;
+  justify-content: center;
+}
+
+main, header, footer {
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0 0 32px 0;
+}
+
+.post {
+  margin-bottom: 40px;
+}
+
+.post h2 {
+  font-size: 22px;
+  margin: 0 0 8px 0;
+}
+
+.meta {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #666666;
+  border-top: 1px solid #dddddd;
+  padding-top: 12px;
+}
